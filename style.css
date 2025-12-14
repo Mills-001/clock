@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100;
+    max-width: 380px;
+}
+.login-header {
+    text-align: center;
+    margin-bottom:30px;
+}
+.login-header h2 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+.login-header p {
+    color: #777;
+    font-size: 14px;
+}
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-group input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all  0.3s ease;
+    outline: none;
+}
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 3px rgba(102, 126, 234, 0.1);
+}
+.form-group label {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    color: #999;
+    padding: 0 5px;
+    font-size: 15px;
+    color: #667eea;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label{
+    top:-8px;
+    font-size: 12px;
+    color: #667eea;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.options a {
+    color: #667eea;
+    text-decoration: none;
+}
+.options a:hover {
+    text-decoration: underline;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.checkbox input {
+    width: auto;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #5563c1;
+}
+.signup{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.signup a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
